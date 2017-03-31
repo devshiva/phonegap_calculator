@@ -51,7 +51,7 @@
 	
 
 <div data-role="page" id="pageone">
-		<div data-role="header" data-position="fixed1">
+		<div data-role="header">
 <h1>Calculator</h1>
   
    
@@ -61,6 +61,10 @@
 		  .padtop{
 			  padding-top:16px;
 		  
+		  }
+		  .ui-mobile-viewport-transitioning, .ui-mobile-viewport-transitioning .ui-page{
+			  overflow:initial !important;
+			  height:100% !important;
 		  }
 	  </style>
 <form method="POST" data-ajax="false" id="formss" style="padding:0px 10px;" data-theme="b">
@@ -154,13 +158,13 @@
    
   
 </div>
-		<div data-role="footer" class="nav-glyphish-example" data-theme="a" data-position="fixed1">
+		<div data-role="footer" class="nav-glyphish-example" data-theme="a" >
 <p style="text-align:center;">Footer</p>
 	  </div>
 	</div>	
 	
 <div data-role="page" id="pagetwo">
-	<div data-role="header" data-position="fixed1">
+	<div data-role="header" data-position="fixed" >
 <h1>Calculator</h1>
     <a href="#pageone" data-icon="home1" class="ui-btn-left">Back</a>
    
@@ -170,7 +174,7 @@
 		<div id="calulationdata"></div>
 		
 	</div>
-	<div data-role="footer" class="nav-glyphish-example" data-position="fixed" data-theme="a">
+	<div data-role="footer" class="nav-glyphish-example" data-theme="a" data-position="fixed">
 <p style="text-align:center;">Footer</p>
 	  </div>
 </div>
